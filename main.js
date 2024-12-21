@@ -30,8 +30,17 @@ app.post('/menu', (req, res) => {
   koneksi.query(`INSERT INTO menu (name, description, price, stock) VALUES ('${data.name}', '${data.description}', '${data.price}', '${data.stock}')`, (error, results, fields) => {
     if (error) throw error;
     res.json(results)
-  })
+  });
+})
 
+app.delete('/menu/:id', (req, res) => {
+  const primaryKey = req.params.id
+
+  koneksi.query(`DELETE FROM menu WHERE id = '${primaryKey}'`, (error, results, fields) => {
+
+    if(error) throw error;
+    res.json(results)
+  });
 })
 
 app.listen(3000)

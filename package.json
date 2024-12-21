@@ -1,5 +1,5 @@
 {
-  "name": "pertemuan_terakhir",
+  "name": "bobas3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.21.2",
     "mysql": "^2.18.1"
   }
