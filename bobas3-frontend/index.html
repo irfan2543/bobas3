@@ -35,18 +35,21 @@
 
                     </div>
                 </div>
-                <div class="price  basis-1/4">
-                    <div>
+                <div class="price basis-1/4 my-12 font-semibold text-center">
+                    <div class="text-3xl font-bold">
                         <h1>Harga</h1>
                     </div>
-                    <div>
-                        <p>SubTotal : <span id="subTotalBuyer"></span></p>
+                    <div class="my-10 text-xl">
+                        <p>SubTotal</p>
+                        <p>Rp. <span id="subTotalBuyer">0</span></p>
                     </div>
-                    <div>
-                        <p>Tax : 10%</p>
+                    <div class="my-5 text-xl">
+                        <p>Tax</p>
+                        <p>10 %</p>
                     </div>
-                    <div>
-                        <p>Total Harga : <span id="totalBuyer"></span></p>
+                    <div class="my-5 text-xl">
+                        <p>Total Harga</p>
+                        <p>Rp. <span id="totalBuyer">0</span></p>
                     </div>
                 </div>
             </div>
@@ -54,11 +57,11 @@
                 <table class="my-10">
                     <tr>
                         <td class="p-5">
-                            <label for="name">Nama Pembeli</label>
+                            <label for="nameBuyer">Nama Pembeli</label>
                         </td>
                         <td class="p-5">:</td>
                         <td class="p-5">
-                            <input type="text" name="name" id="name" class="border-2 border-black hover:bg-green-300 rounded-lg">
+                            <input type="text" name="name" id="nameBuyer" class="border-2 border-black hover:bg-green-300 rounded-lg">
                         </td>
                     </tr>
                     <tr>
@@ -85,7 +88,45 @@
             </div>
         </div>
         <div id="dataOrder">
-
+            <footer class="bg-gray-800 text-white py-8 mt-52">
+                <div class="container mx-auto px-4">
+                  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- About Section -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4">About Us</h3>
+                      <p class="text-sm text-gray-400">
+                        We are committed to delivering the best web solutions to our clients.
+                      </p>
+                    </div>
+              
+                    <!-- Links Section -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">About</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+                      </ul>
+                    </div>
+              
+                    <!-- Contact Section -->
+                    <div>
+                      <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                      <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Email: support@example.com</li>
+                        <li>Phone: +123 456 7890</li>
+                        <li>Address: 123 Web Street, Internet City</li>
+                      </ul>
+                    </div>
+                  </div>
+              
+                  <!-- Bottom Section -->
+                  <div class="border-t border-gray-700 mt-8 pt-4 text-center">
+                    <p class="text-sm text-gray-500">&copy; 2024 YourCompany. All rights reserved.</p>
+                  </div>
+                </div>
+              </footer>
         </div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
