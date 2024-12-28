@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Nasi Goreng</title>
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+<body>
+    <div class="w">
+        <div id="headerWeb" class="p-5 sticky top-0 bg-orange-100 border-b border-orange-200">
+            <nav>
+                <div class="">
+                    <ul class="flex flex-row justify-center space-x-20 text-xl font-serif font-bold text-orange-800 ">
+                        <li><a href="#" class="hover:text-red-600 hover:text-2xl">Home</a></li>
+                        <li><a href="#showmenu" class="hover:text-red-600 hover:text-2xl">Menu</a></li>
+                        <li><a href="" class="hover:text-red-600 hover:text-2xl">Order</a></li>
+                        <li><a href="" class="hover:text-red-600 hover:text-2xl">Data Order</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="imgContent">
+            <img src="https://iknpos.id/wp-content/uploads/2024/12/Resep-Nasi-Goreng-Image-Zeshdo-Pixabay.jpg" alt="nasi-goreng" class="w-full h-[50rem]">
+        </div>
+        <div class="">
+            <h2 class="text-3xl text-center my-12 font-bold">Menu</h2>
+            <div id="showmenu" class="flex flex-row flex-wrap justify-center"></div>
+            <div class="flex flex-row">
+                <div  class="flex flex-col basis-3/4 ">
+                    <div>
+                        <h2 class="text-3xl text-center my-12 font-bold">Pesanan</h2>
+                    </div>
+                    <div id="orderMenu" class="flex flex-row flex-wrap justify-center">
+
+                    </div>
+                </div>
+                <div class="price  basis-1/4">
+                    <div>
+                        <h1>Harga</h1>
+                    </div>
+                    <div>
+                        <p>SubTotal : <span id="subTotalBuyer"></span></p>
+                    </div>
+                    <div>
+                        <p>Tax : 10%</p>
+                    </div>
+                    <div>
+                        <p>Total Harga : <span id="totalBuyer"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="registeredBuyer" class="flex flex-col place-self-center font-semibold text-xl">
+                <table class="my-10">
+                    <tr>
+                        <td class="p-5">
+                            <label for="name">Nama Pembeli</label>
+                        </td>
+                        <td class="p-5">:</td>
+                        <td class="p-5">
+                            <input type="text" name="name" id="name" class="border-2 border-black hover:bg-green-300 rounded-lg">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="p-5">
+                            <label for="cashier">Nama Kasir</label>
+                        </td>
+                        <td class="p-5">:</td>
+                        <td class="p-5">
+                            <select name="cashier" id="cashier" class="hover:bg-green-300">
+                                <option value="rangga">Rangga</option>
+                                <option value="Retno">Retno</option>
+                                <option value="Anggi">Anggi</option>
+                                <option value="Gita">Gita</option>
+                                <option value="Lukas">Lukas</option>
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <div class="bg-gradient-to-l from-[#aeec74] to-[#33df7a] text-white hover:from-[#6f857c] hover:to-[#44bb97]
+                 w-1/4 mx-auto text-center rounded-xl bg">
+                    <button onclick="purchaseMenu()" class="w-full">Pesan</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="dataOrder">
+
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./showmenu.js"></script>
+</body>
+</html>
